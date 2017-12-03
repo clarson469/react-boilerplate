@@ -7,38 +7,38 @@ const SRC = path.resolve(__dirname, 'src');
 module.exports = {
   entry: [
     'react-hot-loader/patch',
-    path.resolve(SRC, 'index.js')
+    path.resolve(SRC, 'index.js'),
   ],
   devServer: {
     contentBase: PUBLIC,
     hot: true,
-    noInfo: true
+    noInfo: true,
   },
   resolve: {
     modules: [
       SRC,
-      path.resolve('./node_modules')
-    ]
+      path.resolve('./node_modules'),
+    ],
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   output: {
     publicPath: '/',
     path: PUBLIC,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [ "style-loader", "css-loader" ]
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.jsx?$/,
         include: SRC,
-        loader: "babel-loader"
-      }
-    ]
-  }
-}
+        loader: 'babel-loader',
+      },
+    ],
+  },
+};
