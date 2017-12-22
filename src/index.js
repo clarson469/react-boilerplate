@@ -5,6 +5,13 @@ import App from 'app';
 
 import './index.css';
 
+/** @typedef {object} Component */
+
+/**
+ * @param {Component} Component
+ * Wraps given component in react-hot-loader AppContainer
+ * before passing to ReactDOM
+ */
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
@@ -16,6 +23,9 @@ const render = (Component) => {
 
 render(App);
 
+/**
+ * allows hot reloading in non-production environment
+ */
 if (module.hot) {
   module.hot.accept('app', () => render(App));
 }
