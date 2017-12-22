@@ -5,6 +5,7 @@ import App from 'app';
 
 import './index.css';
 
+
 /** @typedef {object} Component */
 
 /**
