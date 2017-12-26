@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 
+import HelloWorldContainer from 'containers/helloWorldContainer';
+
 /**
  * @typedef {string} JSX
+ */
 
 /**
   * Parent Component
@@ -21,7 +24,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <main id='main-wrapper'></main>
+        <main id='main-wrapper'>
+          <HelloWorldContainer />
+        </main>
       </Router>
     );
   }

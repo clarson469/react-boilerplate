@@ -13,6 +13,10 @@ module.exports = {
     contentBase: PUBLIC,
     hot: true,
     noInfo: true,
+    quiet: true,
+    stats: {
+      warningsFilter: (warning) => warning.includes('differ in casing'),
+    },
   },
   resolve: {
     modules: [

@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HelloWorldContainer /> should render HelloWorld 1`] = `
+<HelloWorld
+  loadMessage={[Function]}
+  message="Click for a message"
+/>
+`;

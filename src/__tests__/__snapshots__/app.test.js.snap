@@ -4,6 +4,8 @@ exports[`<App /> Should render ok 1`] = `
 <BrowserRouter>
   <main
     id="main-wrapper"
-  />
+  >
+    <HelloWorldContainer />
+  </main>
 </BrowserRouter>
 `;
